@@ -27,6 +27,8 @@ header {
 	margin-top: 21px;
 }
 .header-button {
+	display: inline-block;
+	text-decoration: none;
 	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
 	border-radius: 50px;
 	background-color: #ffffff;
@@ -35,6 +37,12 @@ header {
 	font-weight: 700;
 	padding: 18px 56px 20px 58px;
 	margin-top: 32px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+.header-button:hover {
+	box-shadow: none;
 }
 header small {
 	font-size: 12px;
@@ -126,11 +134,19 @@ footer {
 }
 .footer-button {
 	display: inline-block;
+	text-decoration: none;
 	border-radius: 50px;
 	border: 1px solid #ffffff;
 	background-color: transparent;
 	color: #ffffff;
 	padding: 13px 40px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+.footer-button:hover {
+	background-color: #ffffff;
+	color: #3a7dfd;
 }
 
 @media (max-width: 1200px) {
